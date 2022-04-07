@@ -1,0 +1,16 @@
+p {
+    font-size: 20px;
+  }
+  p:hover {
+    background-color: white;
+    color: black;
+  }
+  button {
+    border: none;
+    background-color: white;
+  }
+  button:hover {
+    background-color: lightblue;
+    border: none;
+    color: red;
+  }

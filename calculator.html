@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./cal.css">
+</head>
+<body style="background-color: whitesmoke;">
+    
+      <body style="background-color: black">
+        <div class="d-flex justify-content-between text-white">
+          <p style="color: black;">calculator</p>
+          <p>
+            <i style="color: black;" class="fa fa-minus"></i>
+            <i style="color: black;" class="fa fa-square"></i>
+            <i style="color: black;" class="fa fa-times"></i>
+          </p>
+        </div>
+        <div class="d-flex text-white">
+          <i style="color: black;" class="fa fa-bars ms-3 mt-2"></i>
+          <h2 class="ms-4 text-black">Standard</h2>
+          <i style="color: black;" class="fa fa-desktop ms-5 mt-2"></i>
+          <i style="color: black;" class="fa fa-time"></i>
+        </div>
+    
+        <div
+          id="upscreen"
+          style="height: 35px; display: flex; flex-direction: row-reverse"
+          class="fs-1 text-black border border-1 border-danger"
+        ></div>
+        <div
+          id="downscreen"
+          style="height: 50px; display: flex; flex-direction: row-reverse"
+          class="fs-1 text-black border border-1"
+        ></div>
+    
+        <div  class="d-flex justify-content-around mt-3 text-black">
+          <p>mc</p>
+          <p>mr</p>
+          <p>m+</p>
+          <p>m-</p>
+          <p>ms</p>
+          <p>m^</p>
+        </div>
+    
+        <div>
+          <button style="width: 24%; height: 53px">%</button>
+          <button onclick="del()" style="width: 24%; height: 53px">CE</button>
+          <button onclick="del()"  style="width: 24%; height: 53px">C</button>
+          <button style="width: 24%; height: 53px">!</button>
+        </div>
+    
+        <div class="mt-1">
+          <button style="width: 24%; height: 53px">x <sup>1</sup></button>
+          <button style="width: 24%; height: 53px">x <sup>2</sup></button>
+          <button style="width: 24%; height: 53px">1 <sup>x</sup></button>
+          <button  style="width: 24%; height: 53px" onclick="operators('/')">/</button>
+        </div>
+        <div class="mt-1">
+          <button
+           onclick="numbers('7')"
+            style="width: 24%; height: 53px; background-color: lightgray"
+          >
+            7
+          </button>
+          <button
+          onclick="numbers('8')"
+                    style="width: 24%; height: 53px; background-color: lightgray"
+          >
+            8
+          </button>
+          <button
+          onclick="numbers('9')"
+                    style="width: 24%; height: 53px; background-color: lightgray"
+          >
+            9
+          </button>
+          <button  style="width: 24%; height: 53px"onclick="operators('*')">*</button>
+        </div>
+        <div class="mt-1">
+          <button
+          onclick="numbers('4')"
+                    style="width: 24%; height: 53px; background-color: lightgray"
+          >
+            4
+          </button>
+          <button
+          onclick="numbers('5')"
+                    style="width: 24%; height: 53px; background-color: lightgray"
+          >
+            5
+          </button>
+         
+       
+          <button
+          onclick="numbers('6')"
+                    style="width: 24%; height: 53px; background-color: lightgray"
+          >
+            6
+          </button>
+          <button  style="width: 24%; height: 53px" onclick="operators('-')">-</button>
+        </div>
+        <div class="mt-1">
+          <button
+          onclick="numbers(1)"
+                    style="width: 24%; height: 53px; background-color: lightgray"
+          >
+            1
+          </button>
+          <button
+         
+          onclick="numbers('2')"
+            style="width: 24%; height: 53px; background-color: lightgray"
+          >
+            2
+          </button>
+          <button
+         onclick="numbers('3')"
+           
+            style="width: 24%; height: 53px; background-color: lightgray"
+          >
+            3
+          </button>
+          <button  id="plus" onclick="operators('+')" style="width: 24%; height: 53px">
+            +
+          </button>
+        </div>
+        <div class="mt-1">
+          <button  style="width: 24%; height: 53px">%</button>
+          <button
+          
+         onclick="numbers('0')"
+            style="width: 24%; height: 53px; background-color: lightgrey"
+          >
+            0
+          </button>
+          <button style="width: 24%; height: 53px">.</button>
+          <button onclick="answer()"  style="width: 24%; height: 53px">=</button>
+        </div>
+</body>
+<script src="./cal.js"></script>
+
+
+
+</html>
